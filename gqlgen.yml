@@ -1,0 +1,20 @@
+schema:
+  - ent.graphql
+  - mutations.graphql
+  - extended.graphql
+
+resolver:
+  layout: follow-schema
+  dir: .
+
+autobind:
+  - github.com/dsykes16/entpoc/ent
+  - github.com/dsykes16/entpoc/ent/todo
+
+models:
+  ID:
+    model:
+      - github.com/dsykes16/entpoc/ent/schema/xidgql.ID
+  Node:
+    model:
+      - github.com/dsykes16/entpoc/ent.Noder
